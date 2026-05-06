@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Piotr Dudziński — Senior UX Writer &amp; Content Designer. 12 years of experience in digital products, banking, and AI-powered content systems.">
-  <title>Piotr Dudziński — UX Writer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-
-  <!-- ZMIEŃ STATUS TUTAJ: available | soon | unavailable -->
-  <script>var AVAILABILITY_STATUS = 'available';</script>
-
-  <style>
 
     /* === TOKENS === */
     :root {
@@ -208,7 +193,7 @@
       align-items: center;
       position: relative;
       z-index: 15;
-      
+
     }
     .hero-right {
       display: flex;
@@ -297,7 +282,7 @@
   pointer-events: none;
   z-index: 5;
   /* Opcjonalnie: dodaj to poniżej dla efektu mgiełki, o który pytałeś */
-  backdrop-filter: blur(4px); 
+  backdrop-filter: blur(4px);
 }
 
     /* === BIO === */
@@ -664,7 +649,7 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+
   /* Przycisk główny (Brązowy) */
   .btn-email {
     font-size: 15px;
@@ -676,8 +661,8 @@
     transition: opacity 0.15s;
     text-decoration: none;
   }
-  .btn-email:hover { 
-    opacity: 0.9; 
+  .btn-email:hover {
+    opacity: 0.9;
   }
 
   /* Przycisk wtórny (Obramowany) */
@@ -691,9 +676,9 @@
     transition: all 0.15s;
     text-decoration: none;
   }
-  .btn-linkedin:hover { 
-    border-color: var(--ink); 
-    background: rgba(0,0,0,0.02); 
+  .btn-linkedin:hover {
+    border-color: var(--ink);
+    background: rgba(0,0,0,0.02);
   }
 
     /* === FOOTER === */
@@ -747,8 +732,8 @@
     }
     .footer-cv:hover { background: var(--accent); color: #fff; }
 
-    .hero-cta-mobile { 
-  display: none; 
+    .hero-cta-mobile {
+  display: none;
 }
 
     /* === MOBILE RESPONSIVE === */
@@ -767,7 +752,7 @@
 
 
 /* Grupowanie elementów do ukrycia */
-  .hero-eyebrow, 
+  .hero-eyebrow,
   .hero-sub p:last-child {
     display: none !important;
   }
@@ -833,344 +818,4 @@
   gap: 12px; /* Odstęp między samymi przyciskami (pionowy) */
 }
 }
-  
 
-  </style>
-</head>
-<body>
-
-<!-- === NAV === -->
-<nav>
-  <a href="index.html" class="nav-logo">Piotr Dudziński</a>
-  <div class="nav-links">
-    <a href="#contact">Contact</a>
-    <a href="cv-piotr-dudzinski.pdf" class="btn-cv" target="_blank" rel="noopener">Download CV →</a>
-  </div>
-</nav>
-
-
-<!-- === HERO === -->
-<section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-inner">
-    <div class="hero-left">
-      <p class="hero-eyebrow">
-  <span>SENIOR UX WRITER</span> · 
-  <span>CONTENT DESIGNER</span> · 
-  <span>12 YEARS OF EXPERIENCE</span>
-</p>
-      <h1 class="hero-tagline">
-        Good UX writing<br>
-        is like <em>bass guitar</em>
-      </h1>
-      <div class="hero-sub"><br>
-        <p>Most people don't notice it.</p>
-        <p>Unless something goes wrong.</p>
-        <p>Then you know.</p>
-        <p>It was holding everything together.</p>
-        <p>I'm Piotr. I make sure nothing goes wrong.</p>
-      </div>
-      <div class="hero-cta-mobile">
-    <a href="#work" class="btn-primary">View projects</a>
-    <a href="#contact" class="btn-secondary">Get in touch</a>
-  </div>
-    </div>
-    <div class="hero-right">
-      <div class="hero-photo-wrap">
-        <div class="hero-photo-accent"></div>
-        <img class="hero-photo" src="images/piotr.jpg" alt="Piotr Dudziński — Senior UX Writer">
-      </div>
-    </div>
-  </div>
-
-<div class="hero-transition-overlay"></div>
-
-</section>
-
-<!-- === BIO === -->
-<section id="bio"> <!-- TO JEST KLUCZOWE ID -->
-  <div class="section-inner">
-    <div class="bio-grid">
-      
-      <div class="bio-text">
-        <!-- Ten akapit musi się wypełnić treścią BIO_HOOK -->
-        <p data-content="BIO_HOOK"></p>
-
-        <!-- To się rozwija -->
-        <details class="bio-details">
-          <summary>Read more</summary>
-          <div class="bio-expanded">
-            <!-- Ten akapit musi się wypełnić treścią BIO_BODY -->
-            <p data-content="BIO_BODY"></p>
-            <p class="bio-footer">
-              <!-- To się wypełni treścią BIO_FOOTER -->
-              <strong data-content="BIO_FOOTER"></strong>
-            </p>
-          </div>
-        </details>
-      </div>
-
-      <!-- Tagi (prawa kolumna) -->
-      <div class="bio-tags" data-content="BIO_TAGS"></div>
-      
-    </div>
-  </div>
-</section>
-
-<!-- === SELECTED WORK === -->
-<section id="work">
-  <div class="section-inner">
-    <p class="eyebrow">Selected Work</p>
-    <h2 class="section-title">Projects that shaped the words.</h2>
-
-    <div class="work-grid">
-
-      <a href="case-study-figma.html" class="work-card">
-        <div class="work-card-meta"><span class="tag-l1">AI / Tooling</span><span class="work-card-meta-text">Flying Bisons · 2024</span></div>
-        <div class="work-card-title">One writer. Twenty designers. Zero bottleneck.</div>
-        <div class="work-card-desc">Built a Figma plugin from scratch — no prior JS experience — that lets designers produce review-ready microcopy independently. 86 iterations in 60 days.</div>
-        <div class="work-divider"></div>
-        <div class="work-card-stats">
-          <div class="work-card-stat"><span>86</span>iterations in 60 days</div>
-          <div class="work-card-stat"><span>10–15</span>daily active users</div>
-          <div class="work-card-stat"><span>0</span>prior JS experience</div>
-        </div>
-        <div class="work-divider"></div>
-        <div class="work-card-cta">Read case study →</div>
-      </a>
-
-      <a href="case-study-ai.html" class="work-card">
-        <div class="work-card-meta"><span class="tag-l1">AI / Tooling</span><span class="work-card-meta-text">Flying Bisons · 2024</span></div>
-        <div class="work-card-title">A content team of six — all running inside Make.com.</div>
-        <div class="work-card-desc">Six AI agents in sequence that mirror a full content team. Multi-day production cycle reduced to minutes.</div>
-        <div class="work-divider"></div>
-        <div class="work-card-stats">
-          <div class="work-card-stat"><span>40+</span>hours saved / month</div>
-          <div class="work-card-stat"><span>minutes</span>vs. multi-day cycle</div>
-        </div>
-        <div class="work-divider"></div>
-        <div class="work-card-cta">Read case study →</div>
-      </a>
-
-      <a href="case-study-constellr.html" class="work-card">
-        <div class="work-card-meta"><span class="tag-l1">Deep Tech</span><span class="work-card-meta-text">Constellr · 2024</span></div>
-        <div class="work-card-title">Thermal satellite data, explained in plain language.</div>
-        <div class="work-card-desc">Interface copy for a B2B Earth observation platform. Plain language as precision — not simplification.</div>
-        <div class="work-divider"></div>
-        <div class="work-card-stats">
-          <div class="work-card-stat">Interface copy · Onboarding · Error states</div>
-        </div>
-        <div class="work-divider"></div>
-        <div class="work-card-cta">Read case study →</div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- === MORE WORK (ACCORDIONS) === -->
-<section id="more-work">
-  <div class="section-inner">
-    <p class="eyebrow">More Work</p>
-    <h2 class="section-title">Other projects worth mentioning.</h2>
-
-    <div class="accordion-list">
-
-      <div class="accordion-item" data-content-file="mini-santander.txt">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-num">01</span>
-          <div class="accordion-head">
-            <div class="accordion-head-meta">
-              <span class="accordion-tag" data-content="TAG"></span>
-              <span class="accordion-meta-text" data-content="COMPANY_YEAR"></span>
-            </div>
-            <div class="accordion-title" data-content="TITLE"></div>
-          </div>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <div class="accordion-content">
-              <div class="accordion-desc" data-content="DESC"></div>
-              <div class="accordion-aside" data-content="ASIDE"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-content-file="mini-hebe.txt">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-num">02</span>
-          <div class="accordion-head">
-            <div class="accordion-head-meta">
-              <span class="accordion-tag" data-content="TAG"></span>
-              <span class="accordion-meta-text" data-content="COMPANY_YEAR"></span>
-            </div>
-            <div class="accordion-title" data-content="TITLE"></div>
-          </div>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <div class="accordion-content">
-              <div class="accordion-desc" data-content="DESC"></div>
-              <div class="accordion-aside" data-content="ASIDE"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-content-file="mini-park-of-poland.txt">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-num">03</span>
-          <div class="accordion-head">
-            <div class="accordion-head-meta">
-              <span class="accordion-tag" data-content="TAG"></span>
-              <span class="accordion-meta-text" data-content="COMPANY_YEAR"></span>
-            </div>
-            <div class="accordion-title" data-content="TITLE"></div>
-          </div>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <div class="accordion-content">
-              <div class="accordion-desc" data-content="DESC"></div>
-              <div class="accordion-aside" data-content="ASIDE"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-content-file="mini-allegro.txt">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-num">04</span>
-          <div class="accordion-head">
-            <div class="accordion-head-meta">
-              <span class="accordion-tag" data-content="TAG"></span>
-              <span class="accordion-meta-text" data-content="COMPANY_YEAR"></span>
-            </div>
-            <div class="accordion-title" data-content="TITLE"></div>
-          </div>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <div class="accordion-content">
-              <div class="accordion-desc" data-content="DESC"></div>
-              <div class="accordion-aside" data-content="ASIDE"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-content-file="mini-onet.txt">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-num">05</span>
-          <div class="accordion-head">
-            <div class="accordion-head-meta">
-              <span class="accordion-tag" data-content="TAG"></span>
-              <span class="accordion-meta-text" data-content="COMPANY_YEAR"></span>
-            </div>
-            <div class="accordion-title" data-content="TITLE"></div>
-          </div>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <div class="accordion-content">
-              <div class="accordion-desc" data-content="DESC"></div>
-              <div class="accordion-aside" data-content="ASIDE"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-content-file="mini-sniezka.txt">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-num">06</span>
-          <div class="accordion-head">
-            <div class="accordion-head-meta">
-              <span class="accordion-tag" data-content="TAG"></span>
-              <span class="accordion-meta-text" data-content="COMPANY_YEAR"></span>
-            </div>
-            <div class="accordion-title" data-content="TITLE"></div>
-          </div>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-body-inner">
-            <div class="accordion-content">
-              <div class="accordion-desc" data-content="DESC"></div>
-              <div class="accordion-aside" data-content="ASIDE"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- === CLIENTS === -->
-<section id="clients">
-  <div class="section-inner">
-    <p class="eyebrow">Companies I've worked with</p>
-    <div class="clients-grid">
-      <div class="client-pill">Allegro</div>
-      <div class="client-pill">Santander Bank Polska</div>
-      <div class="client-pill">Flying Bisons</div>
-      <div class="client-pill">Constellr</div>
-      <div class="client-pill">Hebe</div>
-      <div class="client-pill">Park of Poland</div>
-      <div class="client-pill">Śnieżka</div>
-      <div class="client-pill">Onet</div>
-      <div class="client-pill">Smyk</div>
-      <div class="client-pill">Otomoto</div>
-      <div class="client-pill">Takamol</div>
-      <div class="client-pill">E-point</div>
-    </div>
-  </div>
-</section>
-
-<!-- === CONTACT / CTA === -->
-<section id="contact">
-  <div class="contact-inner">
-    <h2 class="contact-title">Let's work together</h2>
-    <p class="contact-sub">I will make sure your product has a soul and always hits the right note</p>
-    <div class="contact-btns">
-      <a href="mailto:piotr.ndj.dudzinski@gmail.com" class="btn-email">Write me→</a>
-      <a href="https://www.linkedin.com/in/uxw-piotr-dudzinski/" target="_blank" rel="noopener" class="btn-linkedin">LinkedIn ↗</a>
-    </div>
-  </div>
-</section>
-
-<!-- === FOOTER === -->
-<footer>
-  <div class="footer-inner">
-    <a href="mailto:piotr.ndj.dudzinski@gmail.com" class="footer-email">piotr.ndj.dudzinski@gmail.com</a>
-    <span class="footer-center">© 2026 Piotr Dudziński · UX Writer · Poznań, PL</span>
-    <div class="footer-right">
-      <a href="https://www.linkedin.com/in/uxw-piotr-dudzinski/" target="_blank" rel="noopener" class="footer-linkedin">LinkedIn ↗</a>
-      <a href="cv-piotr-dudzinski.pdf" target="_blank" rel="noopener" class="footer-cv">Download CV →</a>
-    </div>
-  </div>
-</footer>
-
-<!-- === JS: accordion (vanilla, <20 lines) === -->
-<script>
-  function toggleAccordion(btn) {
-    var item = btn.closest('.accordion-item');
-    var isOpen = item.classList.contains('open');
-    document.querySelectorAll('.accordion-item.open').forEach(function(el) {
-      el.classList.remove('open');
-    });
-    if (!isOpen) item.classList.add('open');
-  }
-</script>
-
-<script src="content/parser.js"></script>
-<script src="content/loader.js"></script>
-</body>
-</html>
