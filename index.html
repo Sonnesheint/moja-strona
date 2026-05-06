@@ -765,9 +765,12 @@
       .hero-photo { width: 200px; height: 240px; }
       .hero-tagline { font-size: 36px; }
 
-.hero-eyebrow {
-display: none !important;
-}
+
+/* Grupowanie elementów do ukrycia */
+  .hero-eyebrow, 
+  .hero-sub p:last-child {
+    display: none !important;
+  }
 
 
       .hero-sub { font-size: 15px; }
