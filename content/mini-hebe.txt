@@ -1,0 +1,12 @@
+# mini-hebe.txt
+# Format: KLUCZ: wartość
+
+TAG: Retail
+COMPANY_YEAR: Hebe · 2023
+TITLE: Poland's second-largest cosmetics retailer, end-to-end.
+DESC_1: End-to-end UX writing for a retail digital product — app and web flows, onboarding, checkout, and tone of voice alignment across touchpoints.
+DESC_2: The challenge: the digital experience had grown organically, and the copy reflected that — inconsistent tone, unclear flows, checkout friction that users felt but couldn't name.
+SKILLS: Tone of voice, App copy, Checkout flows, Push notifications, Loyalty copy
+INDUSTRY: Retail / Beauty E-commerce
+ASIDE_3_LABEL: Context
+ASIDE_3_VALUE: Mobile app + web platform redesign

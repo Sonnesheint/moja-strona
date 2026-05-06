@@ -1,0 +1,42 @@
+# case-constellr.txt — treść do case-study-constellr.html
+# Format: KLUCZ: wartość
+# Pola z [...] wymagają uzupełnienia
+
+HERO_TAG: Deep Tech
+HERO_TITLE: Thermal satellite data, explained in plain language.
+HERO_LEAD: Interface copy for a B2B Earth observation platform. Plain language as precision — not simplification.
+META_CLIENT: Constellr
+META_YEAR: 2024
+META_ROLE: [np. UX Writer + Content Strategist]
+META_TOOLS: [np. Figma, Notion, Confluence]
+
+CONTEXT_P1: [Kim jest Constellr? Satelity termalne, pomiary temperatury powierzchni ziemi, klienci: agri/budownictwo/klimat. 3–4 zdania dla czytelnika który nie zna firmy.]
+CONTEXT_P2: [Dlaczego UX writing był tu szczególnie trudny: eksperci jako użytkownicy, żargon deep-tech, konieczność balansowania między precyzją a dostępnością.]
+CONTEXT_QUOTE: [Cytat z briefu lub researchu — kluczowe napięcie w projekcie]
+
+COMPANY_SCOPE: [Co konkretnie obejmowała twoja praca: platforma, onboarding, error states, help center, co jeszcze?]
+DELIVERABLE_1: Interface copy
+DELIVERABLE_2: Onboarding flow
+DELIVERABLE_3: Error states
+DELIVERABLE_4: [np. Content audit]
+DELIVERABLE_5: [np. Tone of voice guidelines]
+
+PROCESS_DOMAIN: [Jak nauczyłeś się wystarczająco dużo o tematyce: wywiady z inżynierami, dokumentacja, SME sessions?]
+PROCESS_AUDIT: [Co znalazłeś w istniejącej treści: niespójności, żargon, braki, błędny ton?]
+PROCESS_TONE: [Jak definiowałeś głos marki dla deep-tech startupu? Jakie atrybuty?]
+
+DECISION_1: [Decyzja 1: Zamiast X napisałem Y, bo Z]
+DECISION_2: [Decyzja 2]
+DECISION_3: [Decyzja 3]
+
+SOLUTION_P1: [Co konkretnie dostarczyłeś i jak to zmieniło platformę?]
+
+RESULT_1_NUM: [METRYKA 1]
+RESULT_1_DESC: [OPIS 1]
+RESULT_2_NUM: [METRYKA 2]
+RESULT_2_DESC: [OPIS 2]
+RESULT_3_NUM: [METRYKA 3]
+RESULT_3_DESC: [OPIS 3]
+RESULT_CONTEXT: [Jeśli nie masz twardych metryk: feedback od zespołu, wdrożenie guidelines, inne jakościowe efekty]
+
+LESSONS_P1: [Co jest specyficznego w pisaniu dla deep-tech? Jak pogodzić potrzeby ekspertów i nieekspertów? Co byś zrobił inaczej?]

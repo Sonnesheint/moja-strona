@@ -1,0 +1,12 @@
+# mini-park-of-poland.txt
+# Format: KLUCZ: wartość
+
+TAG: Leisure
+COMPANY_YEAR: Park of Poland · 2023
+TITLE: Europe's biggest tropical water park. Every sign, flow, and ticket.
+DESC_1: Content design for one of Poland's largest entertainment destinations — ticketing flows, wayfinding microcopy, and visitor communication across the full digital journey.
+DESC_2: The copy had to work for a wide audience: families with small children, international visitors, group bookings, and season-pass holders. Clarity was the priority.
+SKILLS: Ticketing flows, Wayfinding copy, App microcopy, Visitor comms
+INDUSTRY: Leisure / Hospitality
+ASIDE_3_LABEL: Audience
+ASIDE_3_VALUE: Families, international visitors, groups

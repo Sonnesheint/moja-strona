@@ -1,0 +1,13 @@
+# mini-sniezka.txt
+# Format: KLUCZ: wartość
+# Uzupełnij pola oznaczone [...]
+
+TAG: FMCG
+COMPANY_YEAR: Śnieżka · [ROK]
+TITLE: [TYTUŁ — maks. 8 słów]
+DESC_1: [OPIS — jeden akapit]
+DESC_2: [OPIS — drugi akapit (opcjonalnie)]
+SKILLS: [np. Configurator copy, Product descriptions, Localization]
+INDUSTRY: FMCG / Consumer goods
+ASIDE_3_LABEL: Context
+ASIDE_3_VALUE: [np. "Color configurator · 3 markets (PL/SK/UA)"]

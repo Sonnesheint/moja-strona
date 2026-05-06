@@ -1,0 +1,12 @@
+# mini-santander.txt
+# Format: KLUCZ: wartość
+
+TAG: Fintech
+COMPANY_YEAR: Santander Bank Polska · 2014–2024
+TITLE: 10 years. 3M users. One plain language certificate.
+DESC_1: A decade of UX writing for a mobile banking app — from copywriter to content lead. Building editorial standards, a translation framework for five languages, and earning a Plain Language Certificate while navigating legal and compliance at every step.
+DESC_2: Led content for a mobile banking app with 3M active users. Managed 3,000+ translation keys across 5 languages (PL, EN, UA, RU, ES).
+SKILLS: UX writing, Plain language, Localization, Content systems, Tone of voice
+INDUSTRY: Digital banking
+ASIDE_3_LABEL: Context
+ASIDE_3_VALUE: Mobile banking app · 3M active users · 5 languages

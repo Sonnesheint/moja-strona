@@ -1,0 +1,13 @@
+# mini-allegro.txt
+# Format: KLUCZ: wartość
+# Uzupełnij pola oznaczone [...]
+
+TAG: E-commerce
+COMPANY_YEAR: Allegro · [ROK]
+TITLE: [TYTUŁ — maks. 8 słów, np. "Poland's largest marketplace, copy at scale."]
+DESC_1: [OPIS — jeden akapit, co robiłeś i jaki był problem]
+DESC_2: [OPIS — drugi akapit, wynik lub kluczowa decyzja (opcjonalnie)]
+SKILLS: [np. UX writing, Content systems, Localization]
+INDUSTRY: E-commerce
+ASIDE_3_LABEL: Context
+ASIDE_3_VALUE: [np. "Marketplace · 22M users · checkout redesign"]

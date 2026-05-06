@@ -1,0 +1,31 @@
+# case-figma.txt — treść do case-study-figma.html
+# Format: KLUCZ: wartość
+# Pola z [...] wymagają uzupełnienia
+
+HERO_TAG: AI / Tooling
+HERO_TITLE: One writer. Twenty designers. Zero bottleneck.
+HERO_LEAD: Built a Figma plugin from scratch — no prior JS experience — that lets designers produce review-ready microcopy independently. 86 iterations in 60 days.
+
+META_CLIENT: Flying Bisons
+META_YEAR: 2024
+META_ROLE: UX Writer & Developer
+META_TOOLS: JavaScript, Figma API, Cloudflare Workers, Claude API
+
+CONTEXT_P1: I was the only UX writer supporting 20 designers across multiple international projects at Flying Bisons. Every piece of microcopy—button labels, error messages, form hints—needed my review before shipping. Designers faced two bad options: wait for my review (delaying their work) or ship placeholder text that often made it to production unfixed.
+CONTEXT_P2: This bottleneck slowed down the entire design process. The real problem wasn't capacity—designers needed immediate feedback on simple microcopy decisions, but I was spending time on repetitive copy polishing instead of strategic content work. Neither worked for a fast-moving agency handling retail, e-commerce, and government clients.
+CONTEXT_QUOTE: "The real problem wasn't capacity—designers needed immediate feedback on simple microcopy decisions."
+
+PROCESS_DEFINITION: Instead of working harder to review more copy, I built a system that made my expertise available to everyone, instantly, anytime. I built a Figma plugin that connects directly to Claude API and applies UX writing best practices through carefully crafted system prompts, allowing designers to create solid microcopy drafts independently.
+PROCESS_ITERATIONS: Over 60 days and 86 versions, I taught myself JavaScript, the Figma API, Cloudflare Workers for secure API routing, and environment variable management. I used Claude AI as my programming tutor, learning through AI-assisted prototyping: I'd describe what I wanted to build, Claude would generate code, I'd test it in Figma, analyze what broke, and iterate.
+
+SOLUTION_P1: Designers select text layers in Figma, choose their project context, and hit "Improve." The plugin detects all layers, sends them to Claude API with project-specific guidelines, and returns copy that follows plain language principles and brand tone. It evolved into a suite including safety guardrails, a translation module (PL, EN, AR, UA), batch processing, RTL support, and context detection based on layer names.
+
+RESULT_1_NUM: 86
+RESULT_1_DESC: iterations in 60 days
+RESULT_2_NUM: 10–15
+RESULT_2_DESC: daily active users
+RESULT_3_NUM: 0
+RESULT_3_DESC: prior JS experience needed
+RESULT_CONTEXT: Immediate results: the bottleneck is gone and the plugin became the default content ops tooling for the entire agency. Quality improved as placeholder text became solid first drafts, and the tool even served as a training aid for designers. Its success led to building 4 more plugins for different content operations needs.
+
+LESSONS_P1: Solve the real problem, not the obvious one: the solution wasn't to hire more writers, but to remove them from repetitive tasks. Systems thinking scales better than heroics. AI-assisted learning works—the key was rapid iteration. Finally, production tools need iteration; features like batch processing came from watching how people actually used the tool.

@@ -1,0 +1,13 @@
+# mini-onet.txt
+# Format: KLUCZ: wartość
+# Uzupełnij pola oznaczone [...]
+
+TAG: Media
+COMPANY_YEAR: Onet · [ROK]
+TITLE: [TYTUŁ — maks. 8 słów]
+DESC_1: [OPIS — jeden akapit]
+DESC_2: [OPIS — drugi akapit (opcjonalnie)]
+SKILLS: [np. Push notifications, Paywall copy, Editorial UX]
+INDUSTRY: Media / Publishing
+ASIDE_3_LABEL: Context
+ASIDE_3_VALUE: [np. "Mobile app · 13M readers · paywall redesign"]
