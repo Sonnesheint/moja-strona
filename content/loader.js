@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             .join('');
           return;
         }
-        el.textContent = data[key];
+        el.innerHTML = data[key];
       });
     } catch (e) {
       console.warn('[loader] case study:', e.message);
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           return;
         }
 
-        if (d[key] !== undefined) el.textContent = d[key];
+        if (d[key] !== undefined) el.innerHTML = d[key];
       });
     } catch (e) {
       console.warn('[loader] ' + filename + ':', e.message);

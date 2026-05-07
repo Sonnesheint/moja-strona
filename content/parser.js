@@ -9,7 +9,7 @@ async function loadContent(filename) {
     if (colonIndex > 0) {
       const key = line.slice(0, colonIndex).trim();
       const value = line.slice(colonIndex + 1).trim();
-      result[key] = value;
+      result[key] = value.replace(/\\n/g, '<br><br>');
     }
   });
   return result;

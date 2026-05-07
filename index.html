@@ -76,7 +76,11 @@
 
         <!-- To się rozwija -->
         <details class="bio-details">
-          <summary>Read more</summary>
+          <summary>
+  <svg class="chevron" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <path d="M3 6l5 5 5-5" stroke="#7a4e28" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</summary>
           <div class="bio-expanded">
             <!-- Ten akapit musi się wypełnić treścią BIO_BODY -->
             <p data-content="BIO_BODY"></p>
@@ -85,6 +89,11 @@
               <strong data-content="BIO_FOOTER"></strong>
             </p>
           </div>
+          <button class="bio-collapse" onclick="this.closest('details').removeAttribute('open')">
+  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:16px;height:16px;transform:rotate(180deg);">
+    <path d="M3 6l5 5 5-5" stroke="#7a4e28" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
         </details>
       </div>
 
@@ -98,8 +107,8 @@
 <!-- === SELECTED WORK === -->
 <section id="work">
   <div class="section-inner">
-    <p class="eyebrow">Selected Work</p>
-    <h2 class="section-title">Projects that shaped the words.</h2>
+    <p class="eyebrow">Full stories</p>
+    <h2 class="section-title">Featured projects</h2>
 
     <div class="work-grid">
 
@@ -114,7 +123,7 @@
           <div class="work-card-stat"><span>0</span>prior JS experience</div>
         </div>
         <div class="work-divider"></div>
-        <div class="work-card-cta">Read case study →</div>
+        <div class="work-card-cta">Dive in→</div>
       </a>
 
       <a href="case-study-ai.html" class="work-card">
@@ -127,7 +136,7 @@
           <div class="work-card-stat"><span>minutes</span>vs. multi-day cycle</div>
         </div>
         <div class="work-divider"></div>
-        <div class="work-card-cta">Read case study →</div>
+        <div class="work-card-cta">Read →</div>
       </a>
 
       <a href="case-study-constellr.html" class="work-card">
@@ -139,7 +148,7 @@
           <div class="work-card-stat">Interface copy · Onboarding · Error states</div>
         </div>
         <div class="work-divider"></div>
-        <div class="work-card-cta">Read case study →</div>
+        <div class="work-card-cta">Dive in →</div>
       </a>
 
     </div>
@@ -149,8 +158,8 @@
 <!-- === MORE WORK (ACCORDIONS) === -->
 <section id="more-work">
   <div class="section-inner">
-    <p class="eyebrow">More Work</p>
-    <h2 class="section-title">Other projects worth mentioning.</h2>
+    <p class="eyebrow">Mini-case studies</p>
+    <h2 class="section-title">Bytes from everyday work</h2>
 
     <div class="accordion-list">
 
@@ -294,20 +303,25 @@
 <section id="clients">
   <div class="section-inner">
     <p class="eyebrow">Companies I've worked with</p>
-    <div class="clients-grid">
-      <div class="client-pill">Allegro</div>
-      <div class="client-pill">Santander Bank Polska</div>
-      <div class="client-pill">Flying Bisons</div>
-      <div class="client-pill">Constellr</div>
-      <div class="client-pill">Hebe</div>
-      <div class="client-pill">Park of Poland</div>
-      <div class="client-pill">Śnieżka</div>
-      <div class="client-pill">Onet</div>
-      <div class="client-pill">Smyk</div>
-      <div class="client-pill">Otomoto</div>
-      <div class="client-pill">Takamol</div>
-      <div class="client-pill">E-point</div>
-    </div>
+    <p class="clients-list">
+      <span class="client-name">Santander Bank Polska</span>,
+      <span class="client-name">Allegro</span>,
+      <span class="client-name">Hebe</span>,
+      <span class="client-name">Smyk</span>,
+      <span class="client-name">Otomoto</span>,
+      <span class="client-name">Onet</span>,
+      <span class="client-name">Śnieżka</span>,
+      <span class="client-name">Park of Poland</span>,
+      <span class="client-name">Constellr</span>,
+      <span class="client-name">Qiwa</span>,
+      <span class="client-name">Salam</span>,
+      <span class="client-name">AsiaCell</span>,
+      <span class="client-name">Flying Bisons</span>,
+      <span class="client-name">E-point</span>,
+      <span class="client-name">Next Apps</span>.
+      <span class="client-name">Pacific</span>.
+    </p>
+    <p class="clients-cta">Want to be next?</p>
   </div>
 </section>
 

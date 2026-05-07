@@ -3,8 +3,8 @@
 # BIO_TAGS: wartości oddzielone przecinkami
 
 BIO_HOOK: You open an app and every sentence feels identical. Same patterns, same structures. This is Generative AI speak. It’s the sound of a product that has lost its soul.
-BIO_BODY: I learned to write and design long before AI was a thing. To me, it’s a tool. And every tool requires an operator. I’ve spent 12 years making words behave, including a decade in digital banking where a single wrong word can break trust. When it comes to AI, I see it as leverage. I use it to build quality content systems, Voice & Tone standards, and automated workflows that make sure your product sounds like a brand with a unique identity. When the workflow gets clunky, I build better solutions. From custom Figma plugins to Make.com pipelines, I engineer the "boring" operations so that the human side of the product can actually scale.
-BIO_FOOTER: Do you want to make sure your product has a soul and hits the right note? Let's have a talk.
+BIO_BODY: A few years ago someone handed everyone a powerful tool. Deliberately or not, they forgot to mention you need to know how to use it properly.\nThe market got flooded with new content. Millions of words. Perfectly structured and perfectly hollow.\n Every app sounds the same. Every piece of text written by the same hand.\nBut AI didn't ruin content. People without craft did.\nI use AI every day. It saves me and my clients literally hours. But I've spent 12 years learning the art of writing. I can tell the difference.\nDid we lose the battle? I wouldn't be so sure.\nPeople are waking up. They want to stand out again.\nThat's where I come in.
+BIO_FOOTER: Want your product to sound like it actually has something meaningful to say?\n Let's have a talk.
 BIO_TAGS: Banking & fintech, Content systems, Plain language, AI pipelines
 
 
