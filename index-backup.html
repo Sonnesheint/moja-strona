@@ -12,7 +12,7 @@
   <!-- ZMIEŃ STATUS TUTAJ: available | soon | unavailable -->
   <script>var AVAILABILITY_STATUS = 'available';</script>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260507">
 </head>
 <body>
 
@@ -21,7 +21,6 @@
   <a href="index.html" class="nav-logo">Piotr Dudziński</a>
   <div class="nav-links">
     <a href="#contact">Contact</a>
-    <a href="cv-piotr-dudzinski.pdf" class="btn-cv" target="_blank" rel="noopener">Download CV →</a>
   </div>
 </nav>
 
@@ -76,7 +75,11 @@
 
         <!-- To się rozwija -->
         <details class="bio-details">
-          <summary>Read more</summary>
+          <summary>
+  <svg class="chevron" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <path d="M3 6l5 5 5-5" stroke="#7a4e28" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</summary>
           <div class="bio-expanded">
             <!-- Ten akapit musi się wypełnić treścią BIO_BODY -->
             <p data-content="BIO_BODY"></p>
@@ -85,6 +88,11 @@
               <strong data-content="BIO_FOOTER"></strong>
             </p>
           </div>
+          <button class="bio-collapse" onclick="this.closest('details').removeAttribute('open')">
+  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:16px;height:16px;transform:rotate(180deg);">
+    <path d="M3 6l5 5 5-5" stroke="#7a4e28" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
         </details>
       </div>
 
@@ -294,22 +302,25 @@
 <section id="clients">
   <div class="section-inner">
     <p class="eyebrow">Companies I've worked with</p>
-    <div class="clients-grid">
-      <div class="client-pill">Allegro</div>
-      <div class="client-pill">Santander Bank Polska</div>
-      <div class="client-pill">Flying Bisons</div>
-      <div class="client-pill">Constellr</div>
-      <div class="client-pill">Hebe</div>
-      <div class="client-pill">Park of Poland</div>
-      <div class="client-pill">Śnieżka</div>
-      <div class="client-pill">Onet</div>
-      <div class="client-pill">Smyk</div>
-      <div class="client-pill">Otomoto</div>
-      <div class="client-pill">Takamol</div>
-      <div class="client-pill">E-point</div>
-      <div class="client-pill">Pacific</div>
-      <div class="client-pill">Next Apps</div>
-    </div>
+    <p class="clients-list">
+      <span class="client-name">Santander Bank Polska</span>,
+      <span class="client-name">Allegro</span>,
+      <span class="client-name">Hebe</span>,
+      <span class="client-name">Smyk</span>,
+      <span class="client-name">Otomoto</span>,
+      <span class="client-name">Onet</span>,
+      <span class="client-name">Śnieżka</span>,
+      <span class="client-name">Park of Poland</span>,
+      <span class="client-name">Constellr</span>,
+      <span class="client-name">Qiwa</span>,
+      <span class="client-name">Salam</span>,
+      <span class="client-name">AsiaCell</span>,
+      <span class="client-name">Flying Bisons</span>,
+      <span class="client-name">E-point</span>,
+      <span class="client-name">Next Apps</span>.
+      <span class="client-name">Pacific</span>.
+    </p>
+    <p class="clients-cta">Want to be next?</p>
   </div>
 </section>
 
@@ -328,12 +339,19 @@
 <!-- === FOOTER === -->
 <footer>
   <div class="footer-inner">
-    <a href="mailto:piotr.ndj.dudzinski@gmail.com" class="footer-email">piotr.ndj.dudzinski@gmail.com</a>
-    <span class="footer-center">© 2026 Piotr Dudziński · UX Writer · Poznań, PL</span>
-    <div class="footer-right">
-      <a href="https://www.linkedin.com/in/uxw-piotr-dudzinski/" target="_blank" rel="noopener" class="footer-linkedin">LinkedIn ↗</a>
-      <a href="cv-piotr-dudzinski.pdf" target="_blank" rel="noopener" class="footer-cv">Download CV →</a>
+    <hr class="footer-rule">
+    <div class="footer-main">
+      <div class="footer-left">
+        <span class="footer-name">Piotr Dudziński</span>
+        <span class="footer-role">UX Writer</span>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:piotr.ndj.dudzinski@gmail.com" class="footer-email">piotr.ndj.dudzinski@gmail.com</a>
+        <a href="https://www.linkedin.com/in/uxw-piotr-dudzinski/" target="_blank" rel="noopener" class="footer-linkedin">LinkedIn ↗</a>
+      </div>
     </div>
+    <hr class="footer-rule">
+    <p class="footer-copy">© 2026 Piotr Dudziński</p>
   </div>
 </footer>
 
@@ -349,7 +367,7 @@
   }
 </script>
 
-<script src="content/parser.js"></script>
-<script src="content/loader.js"></script>
+<script src="content/parser.js?v=20260507"></script>
+<script src="content/loader.js?v=20260507"></script>
 </body>
 </html>
