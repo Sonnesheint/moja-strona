@@ -13,7 +13,7 @@ META_TOOLS: JavaScript, Figma API, Cloudflare Workers, Claude API
 
 CONTEXT_P1: I was the only UX writer supporting 20 designers across multiple international projects at Flying Bisons. Every piece of microcopy—button labels, error messages, form hints—needed my review before shipping. Designers faced two bad options: wait for my review (delaying their work) or ship placeholder text that often made it to production unfixed.
 CONTEXT_P2: This bottleneck slowed down the entire design process. The real problem wasn't capacity—designers needed immediate feedback on simple microcopy decisions, but I was spending time on repetitive copy polishing instead of strategic content work. Neither worked for a fast-moving agency handling retail, e-commerce, and government clients.
-CONTEXT_QUOTE: "The real problem wasn't capacity—designers needed immediate feedback on simple microcopy decisions."
+CONTEXT_QUOTE: The real problem wasn't capacity—designers needed immediate feedback on simple microcopy decisions.
 
 PROCESS_DEFINITION: Instead of working harder to review more copy, I built a system that made my expertise available to everyone, instantly, anytime. I built a Figma plugin that connects directly to Claude API and applies UX writing best practices through carefully crafted system prompts, allowing designers to create solid microcopy drafts independently.
 PROCESS_ITERATIONS: Over 60 days and 86 versions, I taught myself JavaScript, the Figma API, Cloudflare Workers for secure API routing, and environment variable management. I used Claude AI as my programming tutor, learning through AI-assisted prototyping: I'd describe what I wanted to build, Claude would generate code, I'd test it in Figma, analyze what broke, and iterate.

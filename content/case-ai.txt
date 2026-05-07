@@ -12,11 +12,11 @@ HERO_LEAD: Six AI agents in sequence that mirror a full content team. Multi-day 
 META_CLIENT: Flying Bisons
 META_YEAR: 2024
 META_ROLE: [np. UX Writer + AI Workflow Designer]
-META_TOOLS: [np. Make.com, Claude API, Notion, Figma]
+META_TOOLS: Make.com, Claude API, Notion, Figma
 
 CONTEXT_P1: I created a content pipeline where multiple AI agents work together like a real editorial team. A strategist creates the brief and defines the angle. A writer drafts the article with SEO built in. A copywriter adds marketing hooks that convert. A UX writer simplifies the language, ensures readability, and checks Nielsen's heuristics. A proofreader hunts down AI tells like Title Case and long dashes. An editor does the final quality check.
 CONTEXT_P2: How it works: Open the form. Enter your article topic and publication format (LinkedIn, newsletter, case study, etc.). Add a bit of context. Click the button. Wait 2 minutes. That's it. Publication-ready content appears in Notion.
-CONTEXT_QUOTE: "What if you could replace your entire content team with a single button?"
+CONTEXT_QUOTE: What if you could replace your entire content team with a single button?
 
 AI_CHALLENGE_P1: Each role is a carefully crafted prompt with guidelines. We can define rules for any content type our org needs—LinkedIn posts, newsletters, case studies, whatever. The system just follows them.
 

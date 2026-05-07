@@ -8,7 +8,7 @@ HERO_LEAD: Interface copy for a B2B Earth observation platform. Plain language a
 META_CLIENT: Constellr
 META_YEAR: 2024
 META_ROLE: [np. UX Writer + Content Strategist]
-META_TOOLS: [np. Figma, Notion, Confluence]
+META_TOOLS: Figma, Notion, Confluence
 
 CONTEXT_P1: [Kim jest Constellr? Satelity termalne, pomiary temperatury powierzchni ziemi, klienci: agri/budownictwo/klimat. 3–4 zdania dla czytelnika który nie zna firmy.]
 CONTEXT_P2: [Dlaczego UX writing był tu szczególnie trudny: eksperci jako użytkownicy, żargon deep-tech, konieczność balansowania między precyzją a dostępnością.]

@@ -7,7 +7,15 @@ document.addEventListener('DOMContentLoaded', async function () {
       var data = await loadContent(caseFile);
       document.querySelectorAll('[data-content]').forEach(function (el) {
         var key = el.getAttribute('data-content');
-        if (data[key] !== undefined) el.textContent = data[key];
+        if (data[key] === undefined) return;
+        if (key === 'META_TOOLS') {
+          el.classList.add('tags-row');
+          el.innerHTML = data[key].split(',')
+            .map(function (t) { return '<span class="tag">' + t.trim() + '</span>'; })
+            .join('');
+          return;
+        }
+        el.textContent = data[key];
       });
     } catch (e) {
       console.warn('[loader] case study:', e.message);
