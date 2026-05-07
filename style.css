@@ -748,7 +748,7 @@
       .hero-photo-wrap { width: 200px; height: 240px; }
       .hero-photo-accent { width: 200px; height: 240px; bottom: -8px; right: -8px; }
       .hero-photo { width: 200px; height: 240px; }
-      .hero-tagline { font-size: 36px; }
+      .hero-tagline { font-size: 36px; text-align: center;}
 
 
 /* Grupowanie elementów do ukrycia */
@@ -758,7 +758,12 @@
   }
 
 
-      .hero-sub { font-size: 15px; }
+      .hero-sub { font-size: 15px;
+      line-height: 1.6;
+    text-align: center;      /* Kluczowa zmiana */
+    margin-left: auto;       /* Zabezpieczenie centrowania */
+    margin-right: auto;
+    max-width: 90%;          /* Żeby tekst nie dotykał krawędzi ekranu */ }
       .section-inner { padding: 56px 24px; }
       .bio-grid { grid-template-columns: 1fr; gap: 32px; }
       .bio-tags { flex-direction: row; flex-wrap: wrap; }
@@ -816,6 +821,8 @@
 .hero-cta-mobile {
   margin-top: 8px !important;
   gap: 12px; /* Odstęp między samymi przyciskami (pionowy) */
+  margin-bottom: 12px !important;
+  text-align: center;
 }
 }
 
