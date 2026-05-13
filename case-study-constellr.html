@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #fdf6ec; --bg-alt: #f5ede0; --ink: #1a0e04; --ink-mid: #4a2e12;
-      --ink-soft: #5c3d1e; --ink-muted: #7a4e28; --border: #c9a882;
+      --bg: #fdf6ec; --bg-alt: #f5ede000; --ink: #1a0e04; --ink-mid: #4a2e12;
+      --ink-soft: #5c3d1e; --ink-muted: #7a4e28; --border: #c9a88200;
       --border-light: #e2d0b8; --accent: #c44e10; --accent-hover: #a33c0a;
       --serif: 'Playfair Display', Georgia, serif;
       --sans: 'DM Sans', Helvetica, sans-serif;
@@ -27,7 +27,7 @@
     .nav-links a:hover { color: var(--ink); }
     .container { max-width: 760px; margin: 0 auto; padding: 0 48px; }
 
-    .case-hero { padding: 64px 0 48px; border-bottom: 1.5px solid var(--border); margin-bottom: 56px; }
+    .case-hero { padding: 64px 0 48px; border-bottom: 1.5px solid var(--border-light); margin-bottom: 56px; }
     .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-muted); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 32px; transition: color 0.15s; }
     .back-link:hover { color: var(--accent); }
     .back-link::before { content: "←"; }
@@ -44,44 +44,118 @@
     .case-section h3 { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin: 28px 0 10px; }
     .case-section p { font-size: 16px; line-height: 1.8; color: var(--ink-soft); margin-bottom: 16px; }
     .case-section p:last-child { margin-bottom: 0; }
-    .case-section ul { color: var(--ink-soft); padding-left: 20px; margin-bottom: 16px; }
-    .case-section li { line-height: 1.7; margin-bottom: 6px; }
 
-    .callout { background: var(--bg-alt); border-left: 3px solid var(--accent); padding: 20px 24px; margin: 24px 0; border-radius: 0 4px 4px 0; }
-    .callout p { font-family: var(--serif); font-style: italic; font-size: 17px; color: var(--ink-mid); margin: 0; }
+    .callout { background: #f5ede0; border-left: 3px solid var(--accent); padding: 20px 24px; margin: 24px 0; border-radius: 0 4px 4px 0; }
+    .callout p { font-family: var(--sans); font-style: italic; font-size: 17px; color: var(--ink-mid); margin: 0; }
     .callout p::before { content: "\201C"; }
     .callout p::after { content: "\201D"; }
 
-    .img-placeholder { background: var(--bg-alt); border: 1px dashed var(--border); border-radius: 4px; height: 200px; display: flex; align-items: center; justify-content: center; color: var(--ink-muted); font-size: 13px; margin: 24px 0; }
-
     .deliverables { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin: 20px 0; }
-    .deliverable { background: var(--bg-alt); border: 1px solid var(--border-light); border-radius: 2px; padding: 12px 16px; font-size: 14px; color: var(--ink-mid); }
+    .deliverable { background: #f5ede0; border: 1px solid var(--border-light); border-radius: 2px; padding: 12px 16px; font-size: 14px; color: var(--ink-mid); }
     .deliverable::before { content: "✓ "; color: var(--accent); font-weight: 600; }
 
     .decisions { display: flex; flex-direction: column; gap: 16px; margin: 20px 0; }
-    .decision { background: var(--bg-alt); border: 1px solid var(--border-light); border-radius: 2px; padding: 16px 20px; font-size: 15px; color: var(--ink-soft); line-height: 1.7; }
+    .decision { background: #f5ede0; border: 1px solid var(--border-light); border-radius: 2px; padding: 16px 20px; font-size: 15px; color: var(--ink-soft); line-height: 1.7; }
 
     .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border-light); border: 1px solid var(--border-light); margin: 24px 0; }
     .result-card { background: var(--bg); padding: 24px; }
-    .result-number { font-family: var(--sans); font-size: 36px; font-weight: 600; color: var(--accent); line-height: 1; }
+    .result-number { font-family: var(--sans); font-size: 28px; font-weight: 600; color: var(--accent); line-height: 1.2; }
     .result-desc { font-size: 13px; color: var(--ink-soft); margin-top: 8px; line-height: 1.5; }
 
-    footer { background: var(--bg-alt); border-top: 1.5px solid var(--border); }
-    .footer-inner { max-width: 1100px; margin: 0 auto; padding: 28px 48px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
-    .footer-email { font-size: 13px; font-weight: 500; color: var(--ink-soft); }
-    .footer-center { font-size: 12px; color: var(--ink-muted); }
-    .footer-right { display: flex; gap: 20px; align-items: center; }
-    .footer-linkedin { font-size: 13px; font-weight: 500; color: var(--ink-soft); }
-    .tag { display: inline-block; padding: 4px 12px; border-radius: 8px; font-size: 12px; font-weight: 400; background: rgba(141, 58, 26, 0.08); color: #2D1A0E; }
-    .tags-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .result-quote-block { border-left: 3px solid var(--border-light); padding: 20px 24px; margin: 24px 0; }
+    .result-quote-block blockquote { font-family: var(--sans); font-style: italic; font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 12px; }
+    .result-quote-block blockquote::before { content: "\201C"; }
+    .result-quote-block blockquote::after { content: "\201D"; }
+    .result-quote-block cite { font-size: 13px; font-style: normal; color: var(--ink-muted); font-weight: 500; }
 
+    .lessons-list { display: flex; flex-direction: column; margin: 8px 0; }
+    .lesson-item { padding: 18px 0; border-bottom: 1px solid var(--border-light); display: flex; gap: 16px; }
+    .lesson-item:first-child { border-top: 1px solid var(--border-light); }
+    .lesson-num { font-size: 12px; font-weight: 600; color: var(--accent); flex-shrink: 0; padding-top: 3px; }
+    .lesson-item p { font-size: 15px; line-height: 1.75; color: var(--ink-soft); margin: 0; }
+
+    /* Competitor table */
+    .comp-table-wrap { margin: 20px 0; overflow-x: auto; border: 1px solid var(--border-light); border-radius: 4px; }
+    .comp-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .comp-table thead { background: #f5ede0; }
+    .comp-table th { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border-light); white-space: nowrap; }
+    .comp-table td { padding: 10px 14px; border-bottom: 1px solid var(--border-light); vertical-align: top; color: var(--ink-soft); line-height: 1.5; }
+    .comp-table tr:last-child td { border-bottom: none; }
+    .comp-table tr:hover td { background: #faf2e8; }
+    .td-co { font-weight: 600; color: var(--ink) !important; white-space: nowrap; }
+    .td-note { font-size: 10px; color: var(--ink-muted); font-weight: 400; display: block; }
+    .th-c, .td-c { text-align: center !important; white-space: nowrap; }
+    .td-plain { font-size: 11px; font-weight: 600; }
+    .td-plain.yes     { color: #2a7a40; }
+    .td-plain.no      { color: #b03020; }
+    .td-plain.partial { color: #a06010; }
+    .tag-sm { display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; margin: 1px 2px 1px 0; }
+    .tag-sm.b2g      { background: rgba(30,107,138,0.10); color: #1e6b8a; }
+    .tag-sm.b2b      { background: rgba(0,0,0,0.05); color: var(--ink-muted); }
+    .tag-sm.b2c      { background: rgba(40,160,80,0.10); color: #2a7a40; }
+    .tag-sm.plain    { background: rgba(40,160,80,0.10); color: #2a7a40; }
+    .tag-sm.story    { background: rgba(120,80,180,0.10); color: #7050a0; }
+    .tag-sm.military { background: rgba(30,107,138,0.10); color: #1e6b8a; }
+    .tag-sm.corporate{ background: rgba(0,0,0,0.05); color: var(--ink-muted); }
+    .tag-sm.technical{ background: rgba(196,78,16,0.10); color: #b04010; }
+
+    /* Jargon Paradox */
+    .jargon-box { background: #f5ede0; border: 1px solid var(--border-light); border-radius: 4px; padding: 32px; margin: 20px 0; }
+    .jargon-box h3 { font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 16px; text-transform: none; letter-spacing: normal; }
+    .jargon-box p { font-size: 15px; line-height: 1.8; color: var(--ink-soft); margin-bottom: 14px; }
+    .jargon-box p:last-child { margin-bottom: 0; }
+    .jargon-stat { margin-top: 24px; background: var(--bg); border: 1px solid var(--border-light); border-radius: 4px; padding: 20px 24px; }
+    .jargon-stat .num { font-family: var(--serif); font-size: 48px; font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 8px; }
+    .jargon-stat p { font-size: 14px; color: var(--ink-mid); margin: 0; }
+
+    /* ToV cards */
+    .tov-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 16px 0 24px; }
+    .tov-card { background: #f5ede0; border: 1px solid var(--border-light); border-radius: 4px; padding: 18px 20px; }
+    .tov-card.chosen { border-color: var(--accent); background: rgba(196,78,16,0.05); }
+    .tov-card-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 6px; }
+    .tov-card.chosen .tov-card-label { color: var(--accent); }
+    .tov-card h4 { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+    .tov-card p { font-size: 13px; color: var(--ink-muted); margin: 0; line-height: 1.5; }
+    .tov-chosen { display: inline-block; margin-top: 8px; font-size: 10px; font-weight: 600; color: var(--accent); }
+    .tov-chosen::before { content: "✓ "; }
+    .tov-attrs { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+    .tov-attr { font-size: 13px; font-weight: 500; color: var(--ink-soft); border: 1.5px solid var(--border-light); padding: 4px 14px; border-radius: 20px; }
+
+    /* Copy example */
+    .copy-example { border: 1px solid var(--border-light); border-radius: 4px; overflow: hidden; margin: 20px 0; }
+    .copy-col { padding: 24px 28px; }
+    .copy-col + .copy-col { border-top: 1px solid var(--border-light); background: #faf2e8; }
+    .copy-badge { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 10px; border-radius: 20px; margin-bottom: 12px; }
+    .copy-badge.before { background: rgba(0,0,0,0.05); color: var(--ink-muted); }
+    .copy-badge.after  { background: rgba(196,78,16,0.08); color: var(--accent); }
+    .copy-col blockquote { font-size: 15px; line-height: 1.7; color: var(--ink); font-style: normal; }
+    .copy-col blockquote.muted { color: var(--ink-muted); text-decoration: line-through; text-decoration-color: var(--border-light); }
+    .copy-note { margin-top: 10px; font-size: 13px; color: var(--ink-muted); font-style: italic; }
+
+    footer { background: #f5ede0; border-top: 1.5px solid var(--border-light); }
+    .footer-inner { max-width: 1100px; margin: 0 auto; padding: 28px 48px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .footer-email, .footer-linkedin { font-size: 13px; font-weight: 500; color: var(--ink-soft); }
+    .footer-center { font-size: 12px; color: var(--ink-muted); }
+
+    /* TOC sidebar */
+    .case-layout { display: flex; align-items: flex-start; gap: 0; position: relative; max-width: 1000px; margin: 0 auto; padding: 0 48px; }
+    .case-content { flex: 1; min-width: 0; }
+    .toc-sidebar { width: 190px; flex-shrink: 0; position: sticky; top: 80px; align-self: flex-start; padding: 0 32px 0 0; }
+    .toc-nav { display: flex; flex-direction: column; }
+    .toc-item { display: flex; align-items: baseline; gap: 10px; padding: 9px 0; text-decoration: none; }
+    .toc-num { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.02em; color: #9B8B70; flex-shrink: 0; transition: color 0.2s; }
+    .toc-label { font-size: 12px; font-weight: 400; color: #9B8B70; line-height: 1.35; transition: color 0.2s, font-weight 0.15s; }
+    .toc-item.active .toc-num, .toc-item.active .toc-label { color: #2A2018; }
+    .toc-item.active .toc-label { font-weight: 600; }
+    .toc-item:hover .toc-num, .toc-item:hover .toc-label { color: #5C4E3A; }
+
+    @media (max-width: 900px) { .toc-sidebar { display: none; } .case-layout { display: block; padding: 0 24px; } }
     @media (max-width: 768px) {
       nav { padding: 16px 24px; height: auto; flex-wrap: wrap; gap: 12px; }
-      .nav-links { gap: 16px; }
       .container { padding: 0 24px; }
       .case-hero { padding: 40px 0 32px; margin-bottom: 40px; }
       .case-meta { gap: 20px; }
-      .results-grid { grid-template-columns: 1fr; }
+      .results-grid, .tov-grid { grid-template-columns: 1fr; }
       .footer-inner { padding: 24px; flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -98,7 +172,6 @@
 
 <main>
   <div class="container">
-
     <header class="case-hero">
       <a class="back-link" href="index.html">All projects</a>
       <div class="case-tag" data-content="HERO_TAG"></div>
@@ -123,76 +196,253 @@
         </div>
       </div>
     </header>
+  </div>
 
-    <section class="case-section">
-      <h2>Company & product</h2>
-      <p data-content="CONTEXT_P1"></p>
-      <p data-content="CONTEXT_P2"></p>
-      <div class="callout"><p data-content="CONTEXT_QUOTE"></p></div>
-    </section>
+  <div class="case-layout">
+    <aside class="toc-sidebar" aria-label="Table of contents">
+      <nav class="toc-nav" id="toc-nav">
+        <a href="#company"   class="toc-item"><span class="toc-num">[ 01 ]</span><span class="toc-label">Company &amp; product</span></a>
+        <a href="#scope"     class="toc-item"><span class="toc-num">[ 02 ]</span><span class="toc-label">Scope of work</span></a>
+        <a href="#research"  class="toc-item"><span class="toc-num">[ 03 ]</span><span class="toc-label">Domain research</span></a>
+        <a href="#jargon"    class="toc-item"><span class="toc-num">[ 04 ]</span><span class="toc-label">The Jargon Paradox</span></a>
+        <a href="#tov"       class="toc-item"><span class="toc-num">[ 05 ]</span><span class="toc-label">Tone of voice</span></a>
+        <a href="#decisions" class="toc-item"><span class="toc-num">[ 06 ]</span><span class="toc-label">Writing decisions</span></a>
+        <a href="#copy"      class="toc-item"><span class="toc-num">[ 07 ]</span><span class="toc-label">Copy in practice</span></a>
+        <a href="#solution"  class="toc-item"><span class="toc-num">[ 08 ]</span><span class="toc-label">Solution</span></a>
+        <a href="#results"   class="toc-item"><span class="toc-num">[ 09 ]</span><span class="toc-label">Results</span></a>
+        <a href="#learned"   class="toc-item"><span class="toc-num">[ 10 ]</span><span class="toc-label">What I learned</span></a>
+      </nav>
+    </aside>
 
-    <section class="case-section">
-      <h2>Scope of work</h2>
-      <p data-content="COMPANY_SCOPE"></p>
-      <div class="deliverables">
-        <div class="deliverable" data-content="DELIVERABLE_1"></div>
-        <div class="deliverable" data-content="DELIVERABLE_2"></div>
-        <div class="deliverable" data-content="DELIVERABLE_3"></div>
-        <div class="deliverable" data-content="DELIVERABLE_4"></div>
-        <div class="deliverable" data-content="DELIVERABLE_5"></div>
-      </div>
-    </section>
+    <div class="case-content">
 
-    <section class="case-section">
-      <h2>Process</h2>
-      <h3>Understanding the domain</h3>
-      <p data-content="PROCESS_DOMAIN"></p>
-      <h3>Content audit</h3>
-      <p data-content="PROCESS_AUDIT"></p>
-      <div class="img-placeholder">[Content audit spreadsheet or content map]</div>
-      <h3>Defining the voice</h3>
-      <p data-content="PROCESS_TONE"></p>
-    </section>
+      <section class="case-section" id="company">
+        <h2>Company and product</h2>
+        <p data-content="CONTEXT_P1"></p>
+        <p data-content="CONTEXT_P2"></p>
+        <div class="callout"><p data-content="CONTEXT_QUOTE"></p></div>
+      </section>
 
-    <section class="case-section">
-      <h2>Key writing decisions</h2>
-      <div class="decisions">
-        <div class="decision" data-content="DECISION_1"></div>
-        <div class="decision" data-content="DECISION_2"></div>
-        <div class="decision" data-content="DECISION_3"></div>
-      </div>
-      <div class="img-placeholder">[Before / after examples or style guide excerpt]</div>
-    </section>
-
-    <section class="case-section">
-      <h2>Solution</h2>
-      <p data-content="SOLUTION_P1"></p>
-    </section>
-
-    <section class="case-section">
-      <h2>Results</h2>
-      <div class="results-grid">
-        <div class="result-card">
-          <div class="result-number" data-content="RESULT_1_NUM"></div>
-          <div class="result-desc" data-content="RESULT_1_DESC"></div>
+      <section class="case-section" id="scope">
+        <h2>Scope of work</h2>
+        <p data-content="COMPANY_SCOPE"></p>
+        <div class="deliverables">
+          <div class="deliverable" data-content="DELIVERABLE_1"></div>
+          <div class="deliverable" data-content="DELIVERABLE_2"></div>
+          <div class="deliverable" data-content="DELIVERABLE_3"></div>
+          <div class="deliverable" data-content="DELIVERABLE_4"></div>
+          <div class="deliverable" data-content="DELIVERABLE_5"></div>
         </div>
-        <div class="result-card">
-          <div class="result-number" data-content="RESULT_2_NUM"></div>
-          <div class="result-desc" data-content="RESULT_2_DESC"></div>
-        </div>
-        <div class="result-card">
-          <div class="result-number" data-content="RESULT_3_NUM"></div>
-          <div class="result-desc" data-content="RESULT_3_DESC"></div>
-        </div>
-      </div>
-      <p data-content="RESULT_CONTEXT"></p>
-    </section>
+      </section>
 
-    <section class="case-section">
-      <h2>What I learned</h2>
-      <p data-content="LESSONS_P1"></p>
-    </section>
+      <section class="case-section" id="research">
+        <h2>Domain research</h2>
+        <h3>Understanding the domain</h3>
+        <p data-content="PROCESS_DOMAIN"></p>
+        <h3>Competitor content audit</h3>
+        <p data-content="PROCESS_AUDIT"></p>
+        <div class="comp-table-wrap">
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>Company</th><th>Model</th><th>Sector</th><th>Communication style</th><th>Tone</th><th class="th-c">Plain?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-co">NASA</td>
+                <td><span class="tag-sm b2c">B2C / B2G</span></td>
+                <td>Space, Earth obs., science</td>
+                <td>Plain language + storytelling. Reference model for accessible government communication.</td>
+                <td><span class="tag-sm plain">Plain</span> <span class="tag-sm story">Storytelling</span></td>
+                <td class="td-c td-plain yes">Yes</td>
+              </tr>
+              <tr>
+                <td class="td-co">ICEYE</td>
+                <td><span class="tag-sm b2g">B2B / B2G</span></td>
+                <td>SAR imagery, defence, disaster response</td>
+                <td>Technical-military. Precise, jargon-heavy.</td>
+                <td><span class="tag-sm military">Military</span></td>
+                <td class="td-c td-plain no">No</td>
+              </tr>
+              <tr>
+                <td class="td-co">Planet Labs</td>
+                <td><span class="tag-sm b2g">B2B / B2G</span></td>
+                <td>Earth observation, agri, government</td>
+                <td>Accessible + environmental mission narrative. Closer to storytelling than military.</td>
+                <td><span class="tag-sm story">Storytelling</span></td>
+                <td class="td-c td-plain partial">Partial</td>
+              </tr>
+              <tr>
+                <td class="td-co">OroraTech</td>
+                <td><span class="tag-sm b2b">B2B / B2C</span></td>
+                <td>Wildfire detection, thermal satellites</td>
+                <td>Hero narrative — client as protagonist saving the world from fires. Indirect competitor; different thermal application.</td>
+                <td><span class="tag-sm story">Storytelling</span></td>
+                <td class="td-c td-plain partial">Partial</td>
+              </tr>
+              <tr>
+                <td class="td-co">Vantor <span class="td-note">ex-Maxar</span></td>
+                <td><span class="tag-sm b2g">B2G / B2B</span></td>
+                <td>Satellite imagery, defence, intelligence</td>
+                <td>Corporate-technical, government-grade. Heavy on credentials and capability specs.</td>
+                <td><span class="tag-sm corporate">Corporate</span></td>
+                <td class="td-c td-plain no">No</td>
+              </tr>
+              <tr>
+                <td class="td-co">Airbus D&amp;S</td>
+                <td><span class="tag-sm b2g">B2B / B2G</span></td>
+                <td>Defence, aerospace, satellites</td>
+                <td>Corporate-technical. Jargon-heavy, traditional defence communication.</td>
+                <td><span class="tag-sm corporate">Corporate</span></td>
+                <td class="td-c td-plain no">No</td>
+              </tr>
+              <tr>
+                <td class="td-co">Northrop Grumman</td>
+                <td><span class="tag-sm b2g">B2G</span></td>
+                <td>Defence, space systems</td>
+                <td>Military-corporate. Very formal, jargon dominates.</td>
+                <td><span class="tag-sm military">Military</span></td>
+                <td class="td-c td-plain no">No</td>
+              </tr>
+              <tr>
+                <td class="td-co">Palantir</td>
+                <td><span class="tag-sm b2g">B2G / B2B</span></td>
+                <td>Data analytics, intelligence</td>
+                <td>Direct and bold — relatively clean for the government sector. Military-adjacent, not jargon-heavy.</td>
+                <td><span class="tag-sm military">Military</span></td>
+                <td class="td-c td-plain partial">Partial</td>
+              </tr>
+              <tr>
+                <td class="td-co">ASML</td>
+                <td><span class="tag-sm b2b">B2B</span></td>
+                <td>Semiconductor equipment</td>
+                <td>Communication benchmark: extremely complex technology, increasingly well-explained.</td>
+                <td><span class="tag-sm technical">Technical</span></td>
+                <td class="td-c td-plain partial">Partial</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
+      <section class="case-section" id="jargon">
+        <h2>The Jargon Paradox</h2>
+        <div class="jargon-box">
+          <h3>Why complexity isn't credibility</h3>
+          <p>Every established competitor I analysed used heavy technical language. Not because it helped users understand — but because complexity <em>felt</em> like credibility. The implicit logic: if it sounds difficult, it must be serious.</p>
+          <p>This assumption has a long history. Military communication was once a model of brevity. Churchill's 1940 brevity memorandum famously demanded shorter documents during wartime. But as Cold War-era technology programmes grew — rockets, satellites, government aerospace — the language inflated again. NASA-era technical writing became the new default for the entire sector. And it stuck.</p>
+          <p>Research tells a different story. UK Government's own content studies show that plain language increases perceived expertise, not decreases it. Readers trust what they understand. Jargon signals effort; clarity signals confidence.</p>
+          <div class="jargon-stat">
+            <div class="num">0 of 9</div>
+            <p>direct competitors combined plain language with a government or institutional audience. That gap was Constellr's opportunity — and language could be a differentiator as meaningful as the satellites themselves.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="tov">
+        <h2>Tone of voice</h2>
+        <h3>Defining the voice</h3>
+        <p data-content="PROCESS_TONE"></p>
+        <div class="tov-grid">
+          <div class="tov-card">
+            <div class="tov-card-label">Model A</div>
+            <h4>Military register</h4>
+            <p>Defence-heavy companies mirroring military language. Terse, operational, hierarchy-aware.</p>
+          </div>
+          <div class="tov-card chosen">
+            <div class="tov-card-label">Model B · Constellr</div>
+            <h4>Plain language + precision</h4>
+            <p>Government-facing platforms (NASA, UK GOV style). Accessible, task-oriented, built for clarity.</p>
+            <span class="tov-chosen">Chosen direction</span>
+          </div>
+          <div class="tov-card">
+            <div class="tov-card-label">Model C</div>
+            <h4>Storytelling / hero narrative</h4>
+            <p>Environmental monitoring companies positioning the client as protagonist saving the planet.</p>
+          </div>
+        </div>
+        <div class="tov-attrs">
+          <span class="tov-attr">Plain</span>
+          <span class="tov-attr">Professional</span>
+          <span class="tov-attr">Accessible</span>
+        </div>
+      </section>
+
+      <section class="case-section" id="decisions">
+        <h2>Key writing decisions</h2>
+        <div class="decisions">
+          <div class="decision" data-content="DECISION_1"></div>
+          <div class="decision" data-content="DECISION_2"></div>
+          <div class="decision" data-content="DECISION_3"></div>
+        </div>
+      </section>
+
+      <section class="case-section" id="copy">
+        <h2>Copy in practice</h2>
+        <h3>What the Jargon Paradox looks like on the page</h3>
+        <p>The homepage hero is the clearest illustration of the content strategy in action.</p>
+        <div class="copy-example">
+          <div class="copy-col">
+            <span class="copy-badge before">Industry default</span>
+            <blockquote class="muted">Leveraging our proprietary multi-spectral thermal sensing infrastructure and advanced Earth Observation capabilities, our enterprise-grade platform delivers actionable geospatial intelligence for complex operational environments.</blockquote>
+            <p class="copy-note">Technically accurate. Completely opaque. Indistinguishable from any competitor.</p>
+          </div>
+          <div class="copy-col">
+            <span class="copy-badge after">What I wrote</span>
+            <blockquote>Optical satellites see structures. Radar satellites see through clouds. Our satellites see heat patterns = human activity, infrastructure load, and environmental stress.</blockquote>
+            <p class="copy-note">Three parallel sentences. Same technical depth. Zero jargon. The "=" translates sensor data into intelligence without losing precision.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="solution">
+        <h2>Solution</h2>
+        <p data-content="SOLUTION_P1"></p>
+      </section>
+
+      <section class="case-section" id="results">
+        <h2>Results</h2>
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-number" data-content="RESULT_1_NUM"></div>
+            <div class="result-desc" data-content="RESULT_1_DESC"></div>
+          </div>
+          <div class="result-card">
+            <div class="result-number" data-content="RESULT_2_NUM"></div>
+            <div class="result-desc" data-content="RESULT_2_DESC"></div>
+          </div>
+          <div class="result-card">
+            <div class="result-number" data-content="RESULT_3_NUM"></div>
+            <div class="result-desc" data-content="RESULT_3_DESC"></div>
+          </div>
+        </div>
+        <p data-content="RESULT_CONTEXT"></p>
+        <div class="result-quote-block">
+          <blockquote data-content="RESULT_QUOTE"></blockquote>
+          <cite data-content="RESULT_QUOTE_AUTHOR"></cite>
+        </div>
+      </section>
+
+      <section class="case-section" id="learned">
+        <h2>What I learned</h2>
+        <div class="lessons-list">
+          <div class="lesson-item">
+            <span class="lesson-num">01</span>
+            <p data-content="LESSONS_P1"></p>
+          </div>
+          <div class="lesson-item">
+            <span class="lesson-num">02</span>
+            <p data-content="LESSONS_P2"></p>
+          </div>
+          <div class="lesson-item">
+            <span class="lesson-num">03</span>
+            <p data-content="LESSONS_P3"></p>
+          </div>
+        </div>
+      </section>
+
+    </div>
   </div>
 </main>
 
@@ -200,7 +450,7 @@
   <div class="footer-inner">
     <a href="mailto:piotr.ndj.dudzinski@gmail.com" class="footer-email">piotr.ndj.dudzinski@gmail.com</a>
     <span class="footer-center">© 2026 Piotr Dudziński · UX Writer · Poznań, PL</span>
-    <div class="footer-right">
+    <div>
       <a href="https://www.linkedin.com/in/uxw-piotr-dudzinski/" target="_blank" rel="noopener" class="footer-linkedin">LinkedIn ↗</a>
     </div>
   </div>
@@ -208,5 +458,38 @@
 
 <script src="content/parser.js"></script>
 <script src="content/loader.js"></script>
+<script>
+(function () {
+  function initToc() {
+    var items = document.querySelectorAll('.toc-item');
+    if (!items.length) return;
+    var sectionIds = Array.from(items).map(function (a) {
+      return a.getAttribute('href').replace('#', '');
+    });
+    var found = sectionIds.some(function (id) { return !!document.getElementById(id); });
+    if (!found) { setTimeout(initToc, 150); return; }
+    function updateActive() {
+      var current = sectionIds[0];
+      sectionIds.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top < 140) current = id;
+      });
+      items.forEach(function (a) {
+        var id = a.getAttribute('href').replace('#', '');
+        a.classList.toggle('active', id === current);
+      });
+    }
+    items.forEach(function (a) {
+      a.addEventListener('click', function () {
+        items.forEach(function (i) { i.classList.remove('active'); });
+        a.classList.add('active');
+      });
+    });
+    window.addEventListener('scroll', updateActive, { passive: true });
+    updateActive();
+  }
+  initToc();
+})();
+</script>
 </body>
 </html>

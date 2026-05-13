@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #fdf6ec; --bg-alt: #f5ede0; --ink: #1a0e04; --ink-mid: #4a2e12;
-      --ink-soft: #5c3d1e; --ink-muted: #7a4e28; --border: #c9a882;
+      --bg: #fdf6ec; --bg-alt: #f5ede000; --ink: #1a0e04; --ink-mid: #4a2e12;
+      --ink-soft: #5c3d1e; --ink-muted: #7a4e28; --border: #c9a88200;
       --border-light: #e2d0b8; --accent: #c44e10; --accent-hover: #a33c0a;
       --serif: 'Playfair Display', Georgia, serif;
       --sans: 'DM Sans', Helvetica, sans-serif;
@@ -78,6 +78,66 @@
       .results-grid { grid-template-columns: 1fr; }
       .footer-inner { padding: 24px; flex-direction: column; align-items: flex-start; }
     }
+
+    /* === TOC SIDEBAR === */
+    .case-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+    .case-content { flex: 1; min-width: 0; }
+    .toc-sidebar {
+      width: 190px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 80px;
+      align-self: flex-start;
+      padding: 0 32px 0 0;
+    }
+    .toc-nav { display: flex; flex-direction: column; }
+    .toc-item {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      padding: 9px 0;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .toc-num {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 0.02em;
+      color: #9B8B70;
+      flex-shrink: 0;
+      white-space: nowrap;
+      transition: color 0.2s;
+    }
+    .toc-label {
+      font-size: 12px;
+      font-weight: 400;
+      color: #9B8B70;
+      line-height: 1.35;
+      transition: color 0.2s, font-weight 0.15s;
+    }
+    .toc-item.active .toc-num,
+    .toc-item.active .toc-label {
+      color: #2A2018;
+    }
+    .toc-item.active .toc-label {
+      font-weight: 600;
+    }
+    .toc-item:hover .toc-num,
+    .toc-item:hover .toc-label {
+      color: #5C4E3A;
+    }
+    @media (max-width: 900px) {
+      .toc-sidebar { display: none; }
+      .case-layout { display: block; padding: 0 24px; }
+    }
   </style>
 </head>
 <body data-case-file="case-figma.txt">
@@ -118,54 +178,84 @@
       </div>
     </header>
 
-    <section class="case-section">
-      <h2>Context & problem</h2>
-      <p data-content="CONTEXT_P1"></p>
-      <p data-content="CONTEXT_P2"></p>
-      <div class="callout"><p data-content="CONTEXT_QUOTE"></p></div>
-    </section>
+  </div>
 
-    <section class="case-section">
-      <h2>Process</h2>
-      <h3>Discovery</h3>
-      <p data-content="PROCESS_DISCOVERY"></p>
-      <h3>Defining the solution</h3>
-      <p data-content="PROCESS_DEFINITION"></p>
-      <div class="img-placeholder">[Screenshot — process diagram or whiteboard]</div>
-      <h3>Iterations & testing</h3>
-      <p data-content="PROCESS_ITERATIONS"></p>
-    </section>
+  <div class="case-layout">
+    <aside class="toc-sidebar" aria-label="Table of contents">
+      <nav class="toc-nav" id="toc-nav">
+        <a href="#context" class="toc-item">
+          <span class="toc-num">[ 01 ]</span>
+          <span class="toc-label">Context</span>
+        </a>
+        <a href="#process" class="toc-item">
+          <span class="toc-num">[ 02 ]</span>
+          <span class="toc-label">Process</span>
+        </a>
+        <a href="#solution" class="toc-item">
+          <span class="toc-num">[ 03 ]</span>
+          <span class="toc-label">Solution</span>
+        </a>
+        <a href="#results" class="toc-item">
+          <span class="toc-num">[ 04 ]</span>
+          <span class="toc-label">Results</span>
+        </a>
+        <a href="#learned" class="toc-item">
+          <span class="toc-num">[ 05 ]</span>
+          <span class="toc-label">What I learned</span>
+        </a>
+      </nav>
+    </aside>
+    <div class="case-content">
 
-    <section class="case-section">
-      <h2>Solution</h2>
-      <p data-content="SOLUTION_P1"></p>
-      <div class="img-placeholder">[Screenshot — plugin in action]</div>
-    </section>
+      <section class="case-section" id="context">
+        <h2>Context</h2>
+        <p data-content="CONTEXT_P1"></p>
+        <p data-content="CONTEXT_P2"></p>
+        <div class="callout"><p data-content="CONTEXT_QUOTE"></p></div>
+      </section>
 
-    <section class="case-section">
-      <h2>Results</h2>
-      <div class="results-grid">
-        <div class="result-card">
-          <div class="result-number" data-content="RESULT_1_NUM"></div>
-          <div class="result-desc" data-content="RESULT_1_DESC"></div>
+      <section class="case-section" id="process">
+        <h2>Process</h2>
+        <h3>Discovery</h3>
+        <p data-content="PROCESS_DISCOVERY"></p>
+        <h3>Defining the solution</h3>
+        <p data-content="PROCESS_DEFINITION"></p>
+        <div class="img-placeholder">[Screenshot — process diagram or whiteboard]</div>
+        <h3>Iterations & testing</h3>
+        <p data-content="PROCESS_ITERATIONS"></p>
+      </section>
+
+      <section class="case-section" id="solution">
+        <h2>Solution</h2>
+        <p data-content="SOLUTION_P1"></p>
+        <div class="img-placeholder">[Screenshot — plugin in action]</div>
+      </section>
+
+      <section class="case-section" id="results">
+        <h2>Results</h2>
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-number" data-content="RESULT_1_NUM"></div>
+            <div class="result-desc" data-content="RESULT_1_DESC"></div>
+          </div>
+          <div class="result-card">
+            <div class="result-number" data-content="RESULT_2_NUM"></div>
+            <div class="result-desc" data-content="RESULT_2_DESC"></div>
+          </div>
+          <div class="result-card">
+            <div class="result-number" data-content="RESULT_3_NUM"></div>
+            <div class="result-desc" data-content="RESULT_3_DESC"></div>
+          </div>
         </div>
-        <div class="result-card">
-          <div class="result-number" data-content="RESULT_2_NUM"></div>
-          <div class="result-desc" data-content="RESULT_2_DESC"></div>
-        </div>
-        <div class="result-card">
-          <div class="result-number" data-content="RESULT_3_NUM"></div>
-          <div class="result-desc" data-content="RESULT_3_DESC"></div>
-        </div>
-      </div>
-      <p data-content="RESULT_CONTEXT"></p>
-    </section>
+        <p data-content="RESULT_CONTEXT"></p>
+      </section>
 
-    <section class="case-section">
-      <h2>What I learned</h2>
-      <p data-content="LESSONS_P1"></p>
-    </section>
+      <section class="case-section" id="learned">
+        <h2>What I learned</h2>
+        <p data-content="LESSONS_P1"></p>
+      </section>
 
+    </div>
   </div>
 </main>
 
@@ -181,5 +271,50 @@
 
 <script src="content/parser.js"></script>
 <script src="content/loader.js"></script>
+<script>
+(function () {
+  function initToc() {
+    var items = document.querySelectorAll('.toc-item');
+    if (!items.length) return;
+
+    var sectionIds = Array.from(items).map(function (a) {
+      return a.getAttribute('href').replace('#', '');
+    });
+
+    var found = sectionIds.some(function (id) {
+      return !!document.getElementById(id);
+    });
+
+    if (!found) {
+      setTimeout(initToc, 150);
+      return;
+    }
+
+    function updateActive() {
+      var current = sectionIds[0];
+      sectionIds.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top < 140) current = id;
+      });
+      items.forEach(function (a) {
+        var id = a.getAttribute('href').replace('#', '');
+        a.classList.toggle('active', id === current);
+      });
+    }
+
+    items.forEach(function (a) {
+      a.addEventListener('click', function () {
+        items.forEach(function (i) { i.classList.remove('active'); });
+        a.classList.add('active');
+      });
+    });
+
+    window.addEventListener('scroll', updateActive, { passive: true });
+    updateActive();
+  }
+
+  initToc();
+})();
+</script>
 </body>
 </html>

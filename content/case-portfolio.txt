@@ -1,0 +1,37 @@
+# case-portfolio.txt — treść do case-study-portfolio.html
+# Format: KLUCZ: wartość
+# Pola z [TODO] wymagają uzupełnienia rzeczywistą treścią
+
+HERO_TAG: Personal project
+HERO_TITLE: How I built this website (Deep dive)
+HERO_LEAD: I decided to publish this case to help people with setting up their first professional portfolio. Everything is doccumented from top to bottom.
+
+META_CLIENT: Personal project
+META_YEAR: 2025
+META_ROLE: Designer, developer, writer
+META_TOOLS: HTML, CSS, JS, Git, Netlify, Cloudflare
+
+# --- CONTEXT ---
+CONTEXT_P1: [TODO: Opisz dlaczego zdecydowałeś się na budowę portfolio od zera zamiast użycia gotowego szablonu lub kreatora. Co cię motywowało — kontrola nad treścią, możliwość pokazania umiejętności technicznych, coś innego?]
+CONTEXT_P2: [TODO: Opisz wyzwanie. Co było najtrudniejsze na starcie? Brak doświadczenia front-endowego, brak designera, konieczność podejmowania wszystkich decyzji samodzielnie?]
+CONTEXT_QUOTE: [TODO: Jedno zdanie — cytat lub wniosek, który oddaje sedno całego projektu.]
+
+# --- PROCESS ---
+PROCESS_DISCOVERY: [TODO: Jak zaczęłeś? Research, inspiracje, wireframes, decyzje o stosie technologicznym. Co obejrzałeś, co odrzuciłeś i dlaczego?]
+PROCESS_DEFINITION: [TODO: Jak definiowałeś strukturę i zawartość? Jakie decyzje architektoniczne podjąłeś — podział na pliki, system ładowania treści, organizacja CSS?]
+PROCESS_ITERATIONS: [TODO: Ile iteracji przeszedł projekt? Co zmieniałeś po drodze? Jak wyglądał workflow: lokalne testy → Git → Netlify deploy?]
+
+# --- SOLUTION ---
+SOLUTION_P1: [TODO: Opisz gotowe portfolio. Co zostało zbudowane, jak działa, co wyróżnia je od szablonowych rozwiązań. Możesz wspomnieć o systemie ładowania treści, karuzelach, TOC, animacjach — cokolwiek jest tam faktycznie wdrożone.]
+
+# --- RESULTS ---
+RESULT_1_NUM: 1
+RESULT_1_DESC: solo owner — od discovery po maintenance
+RESULT_2_NUM: 0
+RESULT_2_DESC: szablonów, kreatorów ani frameworków
+RESULT_3_NUM: 100%
+RESULT_3_DESC: decyzji projektowych udokumentowanych
+RESULT_CONTEXT: [TODO: Co osiągnąłeś? Czy portfolio przyciągnęło klientów, zapytania, rozmowy rekrutacyjne? Jaki był odzew? Jeśli za wcześnie na dane — opisz co budowa tego projektu dała Tobie jako profesjonaliście.]
+
+# --- LESSONS ---
+LESSONS_P1: [TODO: Czego się nauczyłeś? Zarówno technicznie (HTML, CSS, JS, Git, Netlify) jak i o sobie jako twórcy. Jakie decyzje odwróciłbyś, co zrobiłbyś inaczej?]

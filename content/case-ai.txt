@@ -6,21 +6,21 @@
 # Pola z [...] wymagają uzupełnienia
 
 HERO_TAG: AI / Tooling
-HERO_TITLE: A content team of six — all running inside Make.com.
+HERO_TITLE: Can you replace the entire content team with a single button?
 HERO_LEAD: Six AI agents in sequence that mirror a full content team. Multi-day production cycle reduced to minutes.
 
 META_CLIENT: Flying Bisons
-META_YEAR: 2024
+META_YEAR: 2025
 META_ROLE: [np. UX Writer + AI Workflow Designer]
 META_TOOLS: Make.com, Claude API, Notion, Figma
 
 CONTEXT_P1: I created a content pipeline where multiple AI agents work together like a real editorial team. A strategist creates the brief and defines the angle. A writer drafts the article with SEO built in. A copywriter adds marketing hooks that convert. A UX writer simplifies the language, ensures readability, and checks Nielsen's heuristics. A proofreader hunts down AI tells like Title Case and long dashes. An editor does the final quality check.
-CONTEXT_P2: How it works: Open the form. Enter your article topic and publication format (LinkedIn, newsletter, case study, etc.). Add a bit of context. Click the button. Wait 2 minutes. That's it. Publication-ready content appears in Notion.
-CONTEXT_QUOTE: What if you could replace your entire content team with a single button?
+CONTEXT_P2: How it works: Open the form. Enter your article topic and publication format (LinkedIn, newsletter, case study, etc.). Add a bit of context. Click the button. Wait 2 minutes. That's it. Publication-ready content appears in Notion database.
+CONTEXT_QUOTE: It's a great tool. Probably even a game changer if you have an active social media profile and publish content daily.
 
 AI_CHALLENGE_P1: Each role is a carefully crafted prompt with guidelines. We can define rules for any content type our org needs—LinkedIn posts, newsletters, case studies, whatever. The system just follows them.
 
-PROCESS_RESEARCH: [Uzupełnij: Skąd wiedziałeś co nie działa?]
+PROCESS_RESEARCH: After many attempts, I found the workflow that works best: Strategist → Content writer → Copywriter → UX Writer → Corrector → Final Check. I also tested character limits between agent responses — to make sure each output passes cleanly to the next agent and the model uses tokens efficiently in Make.com.
 PROCESS_PRINCIPLES: Room for improvement: Refine each prompt to boost output quality (this is just v1.0). Add Slack notifications and email alerts. Schedule automated publishing at specific times. Set up regular social media posts to increase visibility.
 
 BA_1_BEFORE: What used to take hours of coordination between five people.
@@ -39,4 +39,4 @@ RESULT_3_NUM: [METRYKA 3]
 RESULT_3_DESC: [OPIS 3]
 RESULT_CONTEXT: And the quality? Better than I expected. If this isn't a "wow" moment for content teams, I don't know what is.
 
-LESSONS_P1: The real win: What used to take hours of coordination between five people now takes 2 minutes and one click. And the quality? Better than I expected.
+LESSONS_P1: This automation genuinely speeds up content production. But that's only part of the story.\nThe flow works well for simple formats — social media posts, short updates. Anything meant to keep a profile active. Longer forms, such as full case studies or in-depth articles, are a different story. Without solid subject matter input, they sound hollow. They also burn through a lot of tokens.\nThere's another weak spot. The agents run in sequence. If one messes up, the rest won't fix it. The whole output goes to waste.\nHallucinations happen too. A human needs to stay in the loop.\nAI works best in iterations. Not one click — several rounds of review and refinement.\nFor short-form content, I'd recommend it without hesitation. It's a great tool. Probably even a game changer if you have an active social media profile and publish content daily.

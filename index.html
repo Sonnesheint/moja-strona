@@ -109,47 +109,67 @@
     <p class="eyebrow">Full stories</p>
     <h2 class="section-title">Featured projects</h2>
 
-    <div class="work-grid">
+    <div class="work-carousel-viewport">
+      <div class="work-grid" id="work-track">
 
-      <a href="case-study-figma.html" class="work-card">
-        <div class="work-card-meta"><span class="tag-l1">AI / Tooling</span><span class="work-card-meta-text">Flying Bisons · 2024</span></div>
-        <div class="work-card-title">One writer. Twenty designers. Zero bottleneck.</div>
-        <div class="work-card-desc">Built a Figma plugin from scratch — no prior JS experience — that lets designers produce review-ready microcopy independently. 86 iterations in 60 days.</div>
-        <div class="work-divider"></div>
-        <div class="work-card-stats">
-          <div class="work-card-stat"><span>86</span>iterations in 60 days</div>
-          <div class="work-card-stat"><span>10–15</span>daily active users</div>
-          <div class="work-card-stat"><span>0</span>prior JS experience</div>
-        </div>
-        <div class="work-divider"></div>
-        <div class="work-card-cta">Dive in→</div>
-      </a>
+        <a href="case-study-figma.html" class="work-card">
+          <div class="work-card-meta"><span class="tag-l1">AI / Tooling</span><span class="work-card-meta-text">Flying Bisons · 2024</span></div>
+          <div class="work-card-title">Devs hate him. He built a Figma plugin alone</div>
+          <div class="work-card-desc">Built a Figma plugin from scratch — no prior JS experience — that lets designers produce review-ready microcopy independently. 86 iterations in 60 days.</div>
+          <div class="work-divider"></div>
+          <div class="work-card-stats">
+            <div class="work-card-stat"><span>86</span>iterations in 60 days</div>
+            <div class="work-card-stat"><span>10–15</span>daily active users</div>
+            <div class="work-card-stat"><span>0</span>prior JS experience</div>
+          </div>
+          <div class="work-divider"></div>
+          <div class="work-card-cta">Read more→</div>
+        </a>
 
-      <a href="case-study-ai.html" class="work-card">
-        <div class="work-card-meta"><span class="tag-l1">AI / Tooling</span><span class="work-card-meta-text">Flying Bisons · 2024</span></div>
-        <div class="work-card-title">A content team of six — all running inside Make.com.</div>
-        <div class="work-card-desc">Six AI agents in sequence that mirror a full content team. Multi-day production cycle reduced to minutes.</div>
-        <div class="work-divider"></div>
-        <div class="work-card-stats">
-          <div class="work-card-stat"><span>40+</span>hours saved / month</div>
-          <div class="work-card-stat"><span>minutes</span>vs. multi-day cycle</div>
-        </div>
-        <div class="work-divider"></div>
-        <div class="work-card-cta">Read →</div>
-      </a>
+        <a href="case-study-ai.html" class="work-card">
+          <div class="work-card-meta"><span class="tag-l1">AI / Tooling</span><span class="work-card-meta-text">Flying Bisons · 2024</span></div>
+          <div class="work-card-title">Can you replace the entire team with one button?</div>
+          <div class="work-card-desc"> I build the workflow. I tested it. Here is my conclusion.</div>
+          <div class="work-divider"></div>
+          <div class="work-card-stats">
+            <div class="work-card-stat"><span>40+</span>hours saved / month</div>
+            <div class="work-card-stat"><span>minutes</span>vs. multi-day cycle</div>
+          </div>
+          <div class="work-divider"></div>
+          <div class="work-card-cta">Read more →</div>
+        </a>
 
-      <a href="case-study-constellr.html" class="work-card">
-        <div class="work-card-meta"><span class="tag-l1">Deep Tech</span><span class="work-card-meta-text">Constellr · 2024</span></div>
-        <div class="work-card-title">Thermal satellite data, explained in plain language.</div>
-        <div class="work-card-desc">Interface copy for a B2B Earth observation platform. Plain language as precision — not simplification.</div>
-        <div class="work-divider"></div>
-        <div class="work-card-stats">
-          <div class="work-card-stat">Interface copy · Onboarding · Error states</div>
-        </div>
-        <div class="work-divider"></div>
-        <div class="work-card-cta">Dive in →</div>
-      </a>
+        <a href="case-study-constellr.html" class="work-card">
+          <div class="work-card-meta"><span class="tag-l1">Deep Tech</span><span class="work-card-meta-text">Constellr · 2024</span></div>
+          <div class="work-card-title">Even rocket science can be written simply</div>
+          <div class="work-card-desc">Interface copy for a B2B Earth observation platform. Plain language as precision — not simplification.</div>
+          <div class="work-divider"></div>
+          <div class="work-card-stats">
+            <div class="work-card-stat">Interface copy · Onboarding · Error states</div>
+          </div>
+          <div class="work-divider"></div>
+          <div class="work-card-cta">Read more →</div>
+        </a>
 
+        <a href="case-study-portfolio.html" class="work-card">
+          <div class="work-card-meta"><span class="tag-l1">Deep Tech</span><span class="work-card-meta-text">Personal project · 2025</span></div>
+          <div class="work-card-title">I built the house I live in</div>
+          <div class="work-card-desc">A UX writer who builds his own portfolio from scratch — no templates, no no-code tools. Just HTML, CSS, JavaScript, Git, Netlify, and Cloudflare.</div>
+          <div class="work-divider"></div>
+          <div class="work-card-stats">
+            <div class="work-card-stat"><span>1</span>solo owner (discovery → maintenance)</div>
+            <div class="work-card-stat"><span>0</span>templates used</div>
+            <div class="work-card-stat"><span>100%</span>decisions documented</div>
+          </div>
+          <div class="work-divider"></div>
+          <div class="work-card-cta">Read more →</div>
+        </a>
+
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="carousel-prev" aria-label="Previous projects" disabled>←</button>
+      <button class="carousel-btn" id="carousel-next" aria-label="Next projects">→</button>
     </div>
   </div>
 </section>
@@ -369,5 +389,27 @@
 
 <script src="content/parser.js?v=20260507"></script>
 <script src="content/loader.js?v=20260507"></script>
+<script>
+(function () {
+  var track = document.getElementById('work-track');
+  var prev  = document.getElementById('carousel-prev');
+  var next  = document.getElementById('carousel-next');
+  if (!track || !prev || !next) return;
+
+  var current = 0;
+  var max = 1; // 4 cards − 3 visible = 1 step
+
+  function update() {
+    track.style.transform = current === 0 ? '' : 'translateX(-33.333%)';
+    prev.disabled = current === 0;
+    next.disabled = current === max;
+  }
+
+  prev.addEventListener('click', function () { if (current > 0)   { current--; update(); } });
+  next.addEventListener('click', function () { if (current < max) { current++; update(); } });
+
+  update();
+})();
+</script>
 </body>
 </html>

@@ -1,42 +1,45 @@
-# case-constellr.txt — treść do case-study-constellr.html
-# Format: KLUCZ: wartość
-# Pola z [...] wymagają uzupełnienia
+# case-constellr.txt
 
-HERO_TAG: Deep Tech
+HERO_TAG: Deep Tech / Space
 HERO_TITLE: Thermal satellite data, explained in plain language.
-HERO_LEAD: Interface copy for a B2B Earth observation platform. Plain language as precision — not simplification.
+HERO_LEAD: Full website copy for a B2B Earth observation platform pivoting from agriculture to government markets. Plain language as competitive differentiator — not a simplification.
+
 META_CLIENT: Constellr
-META_YEAR: 2024
-META_ROLE: [np. UX Writer + Content Strategist]
-META_TOOLS: Figma, Notion, Confluence
+META_YEAR: 2025
+META_ROLE: Lead UX Writer & Content Strategist
+META_TOOLS: Figma · Notion · Confluence
 
-CONTEXT_P1: [Kim jest Constellr? Satelity termalne, pomiary temperatury powierzchni ziemi, klienci: agri/budownictwo/klimat. 3–4 zdania dla czytelnika który nie zna firmy.]
-CONTEXT_P2: [Dlaczego UX writing był tu szczególnie trudny: eksperci jako użytkownicy, żargon deep-tech, konieczność balansowania między precyzją a dostępnością.]
-CONTEXT_QUOTE: [Cytat z briefu lub researchu — kluczowe napięcie w projekcie]
+CONTEXT_P1: Constellr is a German deep-tech startup that owns and operates its own thermal satellites in orbit. They deliver the world's most accurate commercially available thermal intelligence — measuring surface temperature from space for clients in agriculture, construction, and climate monitoring. Their rare differentiator: they own the hardware. Most competitors sell roadmaps and promises. Constellr delivers data today.
+CONTEXT_P2: As demand from government and institutional clients grew, Constellr needed to reposition. They were a startup with agricultural roots trying to earn trust from buyers who treat startups with suspicion — and sometimes that suspicion is a dealbreaker. The copywriting challenge: write for two audiences with opposite expectations, without alienating either.
+CONTEXT_QUOTE: Government buyers view startups with suspicion. Sometimes it's a dealbreaker. They need proven stability and operational certainty.
 
-COMPANY_SCOPE: [Co konkretnie obejmowała twoja praca: platforma, onboarding, error states, help center, co jeszcze?]
-DELIVERABLE_1: Interface copy
-DELIVERABLE_2: Onboarding flow
-DELIVERABLE_3: Error states
-DELIVERABLE_4: [np. Content audit]
-DELIVERABLE_5: [np. Tone of voice guidelines]
+COMPANY_SCOPE: I joined this project at Flying Bisons as lead UX writer and content strategist. The scope covered the full website rebuild — homepage, product pages, use case narratives, about and careers sections. Every word was written as strategic content: backed by competitive research, audience analysis, and a tone of voice framework built specifically for this project.
+DELIVERABLE_1: Website copy — all pages
+DELIVERABLE_2: Tone of voice framework
+DELIVERABLE_3: Competitive content analysis
+DELIVERABLE_4: Use case narratives
+DELIVERABLE_5: Strategic messaging framework
 
-PROCESS_DOMAIN: [Jak nauczyłeś się wystarczająco dużo o tematyce: wywiady z inżynierami, dokumentacja, SME sessions?]
-PROCESS_AUDIT: [Co znalazłeś w istniejącej treści: niespójności, żargon, braki, błędny ton?]
-PROCESS_TONE: [Jak definiowałeś głos marki dla deep-tech startupu? Jakie atrybuty?]
+PROCESS_DOMAIN: I wasn't in every stakeholder meeting — but the recordings were. I went through hours of client conversations to absorb how the Constellr team talked about their own technology: what they emphasised, what they glossed over, what made them visibly proud. That language became source material. Desk research and competitor analysis filled the rest.
+PROCESS_AUDIT: I audited nearly 20 direct competitors and adjacent players across Earth observation, defence aerospace, and data intelligence platforms. The goal wasn't inspiration — it was mapping the communication landscape Constellr would have to stand out in. The table below shows the key players and what I found.
+PROCESS_TONE: I mapped three distinct communication models operating in the space sector: military-style language (defence-heavy companies), plain language (NASA-style, accessible, UK GOV-adjacent), and storytelling (environmental monitoring companies positioning clients as protagonists). Constellr's leadership chose plain language combined with operational authority — not storytelling, not jargon. Three tone attributes guided everything written.
 
-DECISION_1: [Decyzja 1: Zamiast X napisałem Y, bo Z]
-DECISION_2: [Decyzja 2]
-DECISION_3: [Decyzja 3]
+DECISION_1: Content-first, not content-last. On most projects, copy arrives after design. I pushed for the opposite: write first, design around the content. With a tight timeline and a strategic pivot that lived entirely in the messaging, waiting for mockups would have produced worse copy and created a bottleneck. Content became the backbone of the entire project.
+DECISION_2: Language as a competitive asset. Every established competitor used heavy technical language as a proxy for credibility. Research — including UK Government's own content studies and the legacy of Churchill's 1940 brevity memorandum — consistently shows plain language builds more trust, not less. Among all direct competitors analysed, not one combined plain language with a government or institutional audience. That gap was Constellr's opportunity.
+DECISION_3: Frame the pivot as urgency, not retreat. The move from agriculture to government markets could have sounded defensive. Instead, I framed it as a limited-time opportunity: orbital slots are finite, satellite launches are rare, early partners secure a permanent advantage. Constellr wasn't moving away from something — they were opening a door that wouldn't stay open forever.
 
-SOLUTION_P1: [Co konkretnie dostarczyłeś i jak to zmieniło platformę?]
+SOLUTION_P1: I delivered the complete copy for the redesigned constellr.com — every page written as strategic content, not filler. The tone of voice framework gave the client a replicable voice they could carry beyond the launch. The content-first workflow meant designers had clear, final copy to work with from early in the process — no placeholder text, no late-stage rewrites. The project was contracted as a website copy refresh. It became something closer to a brand repositioning.
 
-RESULT_1_NUM: [METRYKA 1]
-RESULT_1_DESC: [OPIS 1]
-RESULT_2_NUM: [METRYKA 2]
-RESULT_2_DESC: [OPIS 2]
-RESULT_3_NUM: [METRYKA 3]
-RESULT_3_DESC: [OPIS 3]
-RESULT_CONTEXT: [Jeśli nie masz twardych metryk: feedback od zespołu, wdrożenie guidelines, inne jakościowe efekty]
+RESULT_1_NUM: 0 of 9
+RESULT_1_DESC: direct competitors combined plain language with an institutional audience — Constellr was the first
+RESULT_2_NUM: Content-first
+RESULT_2_DESC: workflow adopted from day one — copy drove design, not the other way around
+RESULT_3_NUM: Extra mile
+RESULT_3_DESC: Client noted the team went beyond contract scope to deliver strategic quality
+RESULT_CONTEXT: No post-launch metrics were shared — the project concluded before measurement data became available. What's documented: strong client satisfaction expressed consistently at stakeholder touchpoints, and a strategic repositioning implemented in full.
+RESULT_QUOTE: Treat this as a collaborative partnership, not a transactional engagement. Flying Bisons brings strong thinking, moves quickly, and will go the extra mile to deliver high-quality results.
+RESULT_QUOTE_AUTHOR: Conner Reinhardt — Chief of Staff, Constellr
 
-LESSONS_P1: [Co jest specyficznego w pisaniu dla deep-tech? Jak pogodzić potrzeby ekspertów i nieekspertów? Co byś zrobił inaczej?]
+LESSONS_P1: Deep-tech content doesn't need simplification — it needs precision of a different kind. The goal isn't to make things easier; it's to remove unnecessary complexity while preserving technical accuracy. Those are not the same thing.
+LESSONS_P2: In a sector where every player sounds the same, a clear voice is a competitive asset — not a stylistic preference. The Jargon Paradox isn't unique to space tech. It appears anywhere expertise is performed rather than demonstrated.
+LESSONS_P3: The contract was for website copy. The real deliverable was a strategic repositioning. If I repeated this project, I'd surface that gap earlier and make strategy a formal part of the scope from day one — not something discovered mid-process.
